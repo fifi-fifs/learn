@@ -8,6 +8,7 @@ from sqlmodel import Field, SQLModel, create_engine
 
 
 
+
 class Hero(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     name: str
